@@ -11,4 +11,4 @@ node server.js
 see the http://127.0.0.1:3000
 
 # 예제 화면 
-![예제화면](https://raw.githubusercontent.com/wnghdcjfe/lucidCodeForce/master/img/1.png)  
+![예제화면](https://raw.githubusercontent.com/wnghdcjfe/lucidCodeForce/master/img/1.PNG)  
