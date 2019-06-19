@@ -3,8 +3,10 @@ const cheerio = require('cheerio');
 const express = require('express')
 const fxjs = require('fxjs2') 
 const cors = require('cors')
+const path = require('path')
 const app = express() 
-app.use(cors()) 
+app.use(cors())  
+app.use(express.static(path.join(__dirname, 'dist'))) 
 const set_url = a => b => `https://codeforces.com/contest/${a}/status/page/${b}?order=BY_JUDGED_DESC`
 const _req = (a, b) => { 
     const url = set_url(a)(b); 
@@ -38,24 +40,22 @@ const _req = (a, b) => {
             }
         })
     });
-}
-// const test = async(a) =>{
-//     let ret = [];
-//     for(let i = 1; i <= 10; i++){
-//         ret.push(_req(a, i));
-//     } 
-//     const t = await Promise.all(ret)
-//     console.log(fxjs.flat(t))
-// }
-// test(1182)
+} 
 app.get('/get/:num', async(req, res) =>{
     const pageNum = req.params.num; 
-    let ret = [];
+    let temp_list = [];
     for(let i = 1; i <= 10; i++){
-        ret.push(_req(pageNum, i));
+        temp_list.push(_req(pageNum, i));
     } 
-    const t = await Promise.all(ret) 
-    res.send(fxjs.flat(t))
+    const solvedList = await Promise.all(temp_list) 
+    const _sort = (a, b) => {
+        if(a.time === b.time) return a.memory - b.memory
+        return a.time - b.time;
+    }
+    const ret = fxjs.flat(solvedList).sort(_sort)
+    res.send(ret)
 })
 
-app.listen(3000)
+app.listen(3000, ()=>{
+    console.log('서버가 시작되었습니다.')
+})
