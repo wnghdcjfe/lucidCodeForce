@@ -1,0 +1,31 @@
+{
+  "name": "lucidcodeforce",
+  "version": "1.0.0",
+  "description": "to easy run codeforce",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wnghdcjfe/lucidCodeForce.git"
+  },
+  "keywords": [
+    "codeforce"
+  ],
+  "author": "kundol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wnghdcjfe/lucidCodeForce/issues"
+  },
+  "homepage": "https://github.com/wnghdcjfe/lucidCodeForce#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fxjs2": "^0.2.7",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
+  }
+}

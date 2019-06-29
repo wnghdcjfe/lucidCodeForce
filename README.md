@@ -1,10 +1,17 @@
-# 테스트
-```
-npm run dev
+# 필요한 것
+ - vue cli
+ - node.js
+ - `npm install`
+## 클라이언트 시작
+codef/
+```js
+// 테스트
+npm run dev 
+//빌드
 npm run build
 ```
 
-# 구동 
+## 서버 시작
 ```
 node server.js
 ```
