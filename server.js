@@ -57,5 +57,5 @@ app.get('/get/:num', async(req, res) =>{
 })
 
 app.listen(3000, ()=>{
-    console.log('서버가 시작되었습니다.')
+    console.log('서버가 시작되었습니다. : http://127.0.0.1:3000')
 })

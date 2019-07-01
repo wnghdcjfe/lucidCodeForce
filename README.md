@@ -1,21 +1,11 @@
-# 필요한 것
- - vue cli
- - node.js
- - `npm install`
-## 클라이언트 시작
-codef/
-```js
-// 테스트
-npm run dev 
-//빌드
-npm run build
-```
+# 구동하려면?   
+ - 1. node.js 설치(https://nodejs.org/en/)
+ - 2. 그 후 `npm install` 명령어 구동
+ - 3. `node server.js` 명령어 구동
+  
+# 구동 화면 
+![화면](https://raw.githubusercontent.com/wnghdcjfe/lucidCodeForce/master/img/1.PNG)
 
-## 서버 시작
-```
-node server.js
-```
-see the http://127.0.0.1:3000
-
-# 예제 화면 
-![예제화면](https://raw.githubusercontent.com/wnghdcjfe/lucidCodeForce/master/img/1.PNG)  
+# 문의 및 개선사항
+jhc9639@naver.com으로 보내면 개선하겠습니다. 
+ 
