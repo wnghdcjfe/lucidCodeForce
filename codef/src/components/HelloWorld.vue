@@ -11,7 +11,7 @@
       <div class="effect-2 effects"></div>
       <div class="effect-3 effects"></div>
     </div>
-    <div v-if="list.length" class="wrap">
+    <div v-if="ok" class="wrap">
       <input v-model="search" placeholder="finding problem">
       <table class="table">
         <thead>
@@ -33,8 +33,8 @@
           </tr>
         </tbody>
       </table>
-    </div>
-
+    </div> 
+    <h2 v-if="notok"> 코드포스 사이트에 문제가 생겼습니다.</h2>
   </div>
 </template>
 
@@ -50,7 +50,9 @@
         list: [],
         ascending_mem: true,
         ascending_time: true,
-        search: ""
+        search: "", 
+        ok : false, 
+        notok : false
       }
     },
     mounted() {
@@ -64,9 +66,14 @@
     methods: {
       init() {
         this.alert = true;
+        this.ok = false; 
+        this.notok = false;
         axios.get(`${url}${this.num}`).then(res => {
           this.alert = false;
           this.list = res.data;
+          if(this.list.length){
+            ok = true; 
+          }else notok = true; 
         })
       },
       sortTable(col) {
