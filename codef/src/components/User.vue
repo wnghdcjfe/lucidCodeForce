@@ -20,8 +20,8 @@
         </thead>
         <tbody>
           <tr v-for="(item, idx) in list" :key="idx"> 
-            <td>{{item.when}}</td>
-            <td>{{item.problemName}}</td> 
+            <td>{{item.when}}</td> 
+            <td><a :href="item.problemLink" target="_blank">{{item.problemName}}</a></td>  
           </tr>
         </tbody>
       </table>

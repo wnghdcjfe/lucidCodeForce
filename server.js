@@ -62,9 +62,11 @@ const _req2 = (a, b) => {
                     const day = ["일", "월", "화", "수", "목","금","토"]
                     when = `${d.getFullYear()}-${_form(d.getMonth() + 1)}.${_form(d.getDate())} (${day[d.getDay()]}) ${_form(d.getHours())}:${_form(d.getMinutes())}:${_form(d.getSeconds())}`
                     const problemName = _this.eq(3).find('a').text().trim() 
+                    const problemLink = "https://codeforces.com" + _this.eq(3).find('a').attr('href')
                     const obj = {
                         "when" : when,  
-                        "problemName" : problemName
+                        "problemName" : problemName, 
+                        "problemLink" : problemLink
                     }  
                     _list.push(obj); 
                 });
