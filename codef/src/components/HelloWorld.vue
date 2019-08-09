@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="hello"> 
     <p>원하시는 대회, <code>https://codeforces.com/contest/1181</code>의 마지막 <code>number, ex)1181</code>를 입력해주시면 됩니다.</p>
     <p>최신 10페이지가 스크래핑 됩니다. </p>
     <div class="flex">
@@ -40,7 +40,7 @@
 
 <script>
   import axios from 'axios'
-  const url = `http://127.0.0.1:3000/get/`
+  const url = `http://127.0.0.1:3000/contest/`
   export default {
     name: 'HelloWorld',
     data() {
@@ -72,7 +72,7 @@
           this.alert = false;
           this.list = res.data;
           if(this.list.length){
-            ok = true; 
+            this.ok = true; 
           }else notok = true; 
         })
       },
