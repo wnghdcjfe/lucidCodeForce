@@ -9,12 +9,12 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
+      name: '답안검색',
       component: HelloWorld
     }, 
     {
       path: '/user',
-      name: 'User',
+      name: '전적검색',
       component: User
     }
   ]

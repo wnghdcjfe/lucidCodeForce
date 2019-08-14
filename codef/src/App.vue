@@ -26,11 +26,12 @@ export default {
 }
 </script>
 
-<style>
+<style>  
+
 li{
   display: inline-block;
   padding-right: 30px;
-}
+}  
 #app { 
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

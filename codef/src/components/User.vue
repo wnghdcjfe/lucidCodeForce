@@ -31,14 +31,16 @@
 </template>
 
 <script>
-  import axios from 'axios'
-  const url = `http://127.0.0.1:3000/user/`
+  import axios from 'axios' 
+  import config from '../config'
+  import Storage from '../Storage'
+  const url = config.userurl  
   export default {
     name: 'User',
     data() {
       return {
-        alert: false,
-        username: "zagabi",
+        alert: false, 
+        username: Storage.get("username") || "zagabi",
         list: [],  
         ok : false, 
         notok : false
@@ -56,6 +58,7 @@
         this.ok = false; 
         this.notok = false;
         axios.get(`${url}${this.username}`).then(res => {
+          Storage.set("username", this.username)
           this.alert = false;
           this.list = res.data;
           if(this.list.length){
