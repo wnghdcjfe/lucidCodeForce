@@ -1,7 +1,7 @@
 <template>
   <div class="hello"> 
     <p>원하시는 대회, <code>https://codeforces.com/contest/1181</code>의 마지막 <code>number, ex)1181</code>를 입력해주시면 됩니다.</p>
-    <p>최신 10페이지가 스크래핑 됩니다. </p>
+    <p>최신 10페이지가 스크래핑 되어 Accepted만 된 답안들로 구성됩니다.</p>
     <div class="flex">
       <input v-model="num">
       <button @click="init">검색</button>
@@ -40,13 +40,16 @@
 
 <script>
   import axios from 'axios'
-  const url = `http://127.0.0.1:3000/contest/`
+  import config from '../config'
+  import Storage from '../Storage'
+  const url = config.contesturl  
+  
   export default {
     name: 'HelloWorld',
     data() {
       return {
         alert: false,
-        num: 1182,
+        num: Storage.get("problemNum") || 1182,
         list: [],
         ascending_mem: true,
         ascending_time: true,
@@ -69,6 +72,7 @@
         this.ok = false; 
         this.notok = false;
         axios.get(`${url}${this.num}`).then(res => {
+          Storage.set("problemNum", this.num)
           this.alert = false;
           this.list = res.data;
           if(this.list.length){

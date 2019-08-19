@@ -103,7 +103,8 @@ app.get('/contest/:num', async(req, res) =>{
     const ret = FxJS.flat(solvedList).sort(_sort)
     res.send(ret)
 })
- 
-app.listen(3000, ()=>{
-    console.log('서버가 시작되었습니다. : http://127.0.0.1:3000')
+
+const PORT = process.env.PORT || 3000
+app.listen(PORT, ()=>{
+    console.log('서버가 시작되었습니다. : http://127.0.0.1:' + PORT)
 })
