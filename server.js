@@ -104,7 +104,7 @@ app.get('/contest/:num', async(req, res) =>{
     res.send(ret)
 })
 
-// const PORT = process.env.PORT || 3000
-// app.listen(PORT, ()=>{
-//     console.log('서버가 시작되었습니다. : http://127.0.0.1:' + PORT)
-// })
+const PORT = process.env.PORT || 3000
+app.listen(PORT, ()=>{
+    console.log('서버가 시작되었습니다. : http://127.0.0.1:' + PORT)
+})
