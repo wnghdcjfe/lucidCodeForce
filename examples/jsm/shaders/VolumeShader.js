@@ -9,7 +9,7 @@
 import {
 	Vector2,
 	Vector3
-} from "../../../build/three.module.js";
+} from "../../three.module.js";
 
 var VolumeRenderShader1 = {
 	uniforms: {

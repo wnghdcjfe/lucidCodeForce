@@ -2,7 +2,7 @@
  * @author sunag / http://www.sunag.com.br/
  */
 
-import { Color } from '../../../../build/three.module.js';
+import { Color } from '../../../three.module.js';
 
 import { InputNode } from '../core/InputNode.js';
 import { NodeUtils } from '../core/NodeUtils.js';

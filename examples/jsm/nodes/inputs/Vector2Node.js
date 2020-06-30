@@ -2,7 +2,7 @@
  * @author sunag / http://www.sunag.com.br/
  */
 
-import { Vector2 } from '../../../../build/three.module.js';
+import { Vector2 } from '../../../three.module.js';
 
 import { InputNode } from '../core/InputNode.js';
 import { NodeUtils } from '../core/NodeUtils.js';

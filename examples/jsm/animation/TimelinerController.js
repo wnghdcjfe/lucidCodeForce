@@ -19,7 +19,7 @@ import {
 	AnimationMixer,
 	AnimationUtils,
 	PropertyBinding
-} from "../../../build/three.module.js";
+} from "../../three.module.js";
 
 var TimelinerController = function TimelinerController( scene, trackInfo, onUpdate ) {
 

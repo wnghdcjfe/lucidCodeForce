@@ -8,7 +8,7 @@ import {
 	NoColors,
 	NormalBlending,
 	ShaderMaterial
-} from '../../../../build/three.module.js';
+} from '../../../three.module.js';
 
 import { NodeBuilder } from '../core/NodeBuilder.js';
 import { ColorNode } from '../inputs/ColorNode.js';

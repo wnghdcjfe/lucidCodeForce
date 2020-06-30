@@ -9,7 +9,7 @@ import {
 	Float32BufferAttribute,
 	Loader,
 	Vector3
-} from "../../../build/three.module.js";
+} from "../../three.module.js";
 
 var MD2Loader = function ( manager ) {
 

@@ -14,7 +14,7 @@
 
 import {
 	WebGLRenderTarget
-} from "../../../build/three.module.js";
+} from "../../three.module.js";
 import { SSAARenderPass } from "../postprocessing/SSAARenderPass.js";
 
 var TAARenderPass = function ( scene, camera, clearColor, clearAlpha ) {

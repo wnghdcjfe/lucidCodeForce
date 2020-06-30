@@ -10,7 +10,7 @@ import {
 	Matrix4,
 	Object3D,
 	Vector3
-} from "../../../build/three.module.js";
+} from "../../three.module.js";
 import { Projector } from "../renderers/Projector.js";
 import { RenderableFace } from "../renderers/Projector.js";
 import { RenderableLine } from "../renderers/Projector.js";

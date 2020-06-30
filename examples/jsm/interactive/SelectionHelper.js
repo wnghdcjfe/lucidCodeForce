@@ -4,7 +4,7 @@
 
 import {
 	Vector2
-} from "../../../build/three.module.js";
+} from "../../three.module.js";
 
 var SelectionHelper = ( function () {
 

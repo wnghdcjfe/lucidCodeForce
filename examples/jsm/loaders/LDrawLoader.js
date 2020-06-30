@@ -22,7 +22,7 @@ import {
 	MeshStandardMaterial,
 	ShaderMaterial,
 	Vector3
-} from "../../../build/three.module.js";
+} from "../../three.module.js";
 
 var LDrawLoader = ( function () {
 

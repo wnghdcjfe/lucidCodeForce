@@ -55,7 +55,7 @@ import {
 	Matrix4,
 	Vector3,
 	Vector4
-} from "../../../build/three.module.js";
+} from "../../three.module.js";
 
 var TeapotBufferGeometry = function ( size, segments, bottom, lid, body, fitLid, blinn ) {
 

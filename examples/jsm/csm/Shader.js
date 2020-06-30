@@ -2,7 +2,7 @@
  * @author vHawk / https://github.com/vHawk/
  */
 
-import { ShaderChunk } from '../../../build/three.module.js';
+import { ShaderChunk } from '../../three.module.js';
 
 export default {
 	lights_fragment_begin: /* glsl */`

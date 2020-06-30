@@ -9,7 +9,7 @@ import {
 	CubeUVRefractionMapping,
 	LinearEncoding,
 	GammaEncoding
-} from '../../../../build/three.module.js';
+} from '../../../three.module.js';
 
 import { NodeUniform } from './NodeUniform.js';
 import { NodeUtils } from './NodeUtils.js';

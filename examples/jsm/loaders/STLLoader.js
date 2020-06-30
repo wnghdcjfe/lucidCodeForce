@@ -63,7 +63,7 @@ import {
 	Loader,
 	LoaderUtils,
 	Vector3
-} from "../../../build/three.module.js";
+} from "../../three.module.js";
 
 
 var STLLoader = function ( manager ) {

@@ -61,7 +61,7 @@ import {
 	Vector4,
 	VectorKeyframeTrack,
 	sRGBEncoding
-} from "../../../build/three.module.js";
+} from "../../three.module.js";
 import { Zlib } from "../libs/inflate.module.min.js";
 import { NURBSCurve } from "../curves/NURBSCurve.js";
 

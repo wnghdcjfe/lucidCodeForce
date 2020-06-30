@@ -8,7 +8,7 @@ import {
 	Matrix4,
 	Mesh,
 	MeshBasicMaterial
-} from "../../../build/three.module.js";
+} from "../../three.module.js";
 
 var ShadowMesh = function ( mesh ) {
 

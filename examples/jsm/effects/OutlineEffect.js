@@ -62,7 +62,7 @@ import {
 	ShaderMaterial,
 	UniformsLib,
 	UniformsUtils
-} from "../../../build/three.module.js";
+} from "../../three.module.js";
 
 var OutlineEffect = function ( renderer, parameters ) {
 

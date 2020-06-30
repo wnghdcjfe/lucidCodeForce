@@ -2,7 +2,7 @@
  * @author sunag / http://www.sunag.com.br/
  */
 
-import { Matrix3 } from '../../../../build/three.module.js';
+import { Matrix3 } from '../../../three.module.js';
 
 import { InputNode } from '../core/InputNode.js';
 

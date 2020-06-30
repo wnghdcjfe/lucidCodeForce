@@ -8,7 +8,7 @@
 import {
 	ShaderMaterial,
 	UniformsUtils
-} from "../../../build/three.module.js";
+} from "../../three.module.js";
 import { Pass } from "../postprocessing/Pass.js";
 import { HalftoneShader } from "../shaders/HalftoneShader.js";
 

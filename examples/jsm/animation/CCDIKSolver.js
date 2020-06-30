@@ -33,7 +33,7 @@ import {
 	Quaternion,
 	SphereBufferGeometry,
 	Vector3
-} from "../../../build/three.module.js";
+} from "../../three.module.js";
 
 var CCDIKSolver = ( function () {
 

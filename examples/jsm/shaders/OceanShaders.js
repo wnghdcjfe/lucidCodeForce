@@ -24,7 +24,7 @@
 
 import {
 	Vector2
-} from "../../../build/three.module.js";
+} from "../../three.module.js";
 
 var OceanShaders = {};
 OceanShaders[ "ocean_sim_vertex" ] = {

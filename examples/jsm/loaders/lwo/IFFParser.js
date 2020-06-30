@@ -35,7 +35,7 @@
  *
  **/
 
-import { LoaderUtils } from "../../../../build/three.module.js";
+import { LoaderUtils } from "../../../three.module.js";
 import { LWO2Parser } from "./LWO2Parser.js";
 import { LWO3Parser } from "./LWO3Parser.js";
 

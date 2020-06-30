@@ -18,7 +18,7 @@ import {
 	RawShaderMaterial,
 	Vector2,
 	WebGLRenderTarget
-} from "../../../build/three.module.js";
+} from "../../three.module.js";
 
 var _mipmapMaterial = _getMipmapMaterial();
 var _mesh = new Mesh( new PlaneBufferGeometry( 2, 2 ), _mipmapMaterial );
