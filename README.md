@@ -17,6 +17,5 @@
 # 문의 및 개선사항
 jhc9639@naver.com으로 보내면 개선하겠습니다. 
  
-
-아트리 링크
-http://127.0.0.1:3000/artri/lib/three.js/examples/css3d_periodictable.html
+  
+http://lucidcode.herokuapp.com/artri/css3d_periodictable.html
