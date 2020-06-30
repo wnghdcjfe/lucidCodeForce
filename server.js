@@ -7,6 +7,7 @@ const path = require('path')
 const app = express()   
 app.use(cors())  
 app.use(express.static(path.join(__dirname, 'dist'))) 
+app.use('/artri', express.static(path.join(__dirname, 'UI'))) 
 const set_url = a => b => `https://codeforces.com/contest/${a}/status/page/${b}?order=BY_JUDGED_DESC`  
 const set_url2 = a => b => `https://codeforces.com/submissions/${a}/page/${b}`
 const _req = (a, b) => { 
